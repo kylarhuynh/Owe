@@ -1,0 +1,168 @@
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --light: #eee;
+    --green: #0a8d0a;
+    --darkgreen: #085425;
+    --darkestgreen: #053417;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Fira sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: #FFF;
+}
+
+header {
+    padding: 2rem 2rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 1rem;
+}
+
+#new-due-form{
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-who-input {
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--light);
+}
+
+#new-amount-input {
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--light);
+
+}
+
+#new-why-input {
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+}
+
+#new-who-input::placeholder {
+    color: rgb(140, 140, 140);
+    font-weight: 600;
+}
+
+#new-amount-input::placeholder {
+    color: rgb(140, 140, 140);
+    font-weight: 600;
+}
+
+#new-why-input::placeholder {
+    color: rgb(140, 140, 140);
+    font-weight: 600;
+}
+
+#new-due-submit {
+    color: var(--green);
+    font-weight: 700;
+    background-color: var(--darkestgreen);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.4s
+}
+
+#new-due-submit:hover {
+    opacity: 0.8;
+}
+
+#new-due-submit:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.charge-list {
+    padding: 1rem;
+}
+
+.charge-list h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--green);
+    margin-bottom: 1rem;
+}
+
+#dues .due {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#dues .due .content .text{
+    color: var(--light);
+    font-size: 1.125rem;
+    display: block;
+    transition: 0.4s;
+}
+
+#dues .due .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.due .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4;
+}
+
+.due .actions button:hover {
+    opacity: 0.8;
+}
+
+.due .actions button:active {
+    opacity: 0.6;
+}
+
+.due .actions .edit {
+    background-image: linear-gradient(to right, var(--green), var(--light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.due .actions .delete {
+    color: crimson
+}

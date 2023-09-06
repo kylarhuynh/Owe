@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owe</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Owe</h1>
+        <form id="new-due-form">
+            <input type="text" id="new-who-input" placeholder="Who do you owe?" />
+            <input type="text" id="new-amount-input" placeholder="0.00" />
+            <input type="text" id="new-why-input" placeholder="For what?" />
+            <input type="submit" id="new-due-submit" value="ADD" />
+        </form>
+    </header>
+
+    <main>
+        <section class="charge-list">
+            <h2>To Payback</h2>
+            <div id="dues">
+                <!-- <div class="due">
+                    <div class="content">
+                        <input type="text" class="text" value="First due" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
